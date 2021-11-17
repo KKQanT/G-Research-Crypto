@@ -16,7 +16,7 @@ def training_window_sliding(X, y, window):
     y_windows = np.array(y_windows)
     return X_windows, y_windows
 
-def convert_df_to_X(df, window, base_features, is_train=False):
+def convert_df_to_X(df, base_features, is_train=False):
     X = df[base_features].values
     y = df[['Target']].values
     
